@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "geo-battle-station",
+      "runtimeExecutable": "/Users/ryankimball/Desktop/Dr. Bar/dr-bar-geo-battle-station-Claude-Code/.claude/run-dev.sh",
+      "runtimeArgs": [],
+      "port": 3000
+    }
+  ]
+}

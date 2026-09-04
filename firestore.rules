@@ -1,0 +1,21 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Tasks are seeded by the admin script only. The app's UI may read them
+    // and toggle exactly two fields (done, approval) — no create/delete from
+    // the client, and no other field can be changed.
+    match /tasks/{taskId} {
+      allow read: if true;
+      allow update: if request.resource.data.diff(resource.data).affectedKeys().hasOnly(['done', 'approval']);
+      allow create, delete: if false;
+    }
+
+    // History entries are logged manually (by Ryan or a script) outside this
+    // app. The dashboard only ever reads them.
+    match /history/{entryId} {
+      allow read: if true;
+      allow write: if false;
+    }
+  }
+}
