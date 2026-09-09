@@ -17,8 +17,7 @@ export interface SeedTask {
 
 const AIRWAY_DRIVE_FILE = "https://docs.google.com/document/d/1zwhQ29uWWhIJMX1_ThZfy1fBfvA4Ln9dp1kT-Th6FNk/edit?usp=sharing";
 const MARPE_F_DRIVE_FILE = "https://docs.google.com/document/d/16s4A1dvor8gZDdom0WqSHumEaQywhERBX8BgTbp3c2s/edit?usp=sharing";
-const MARPE_BYLINE_DRIVE_FILE = "https://drive.google.com/file/d/142Srub2snQfw-P6hEtVZ-8-MTRcK8W4X/view";
-const MARPE_E_DRIVE_FILE = "https://drive.google.com/file/d/1FGwfhoZ2rR3vDa2_-nOuYbr_M-fSWIKt/view";
+const MARPE_E_DRIVE_FILE = "https://docs.google.com/document/d/1QFxPjliH--1QFbL3k9vui38n7nKbzfccsKFyVL8lgyc/edit?usp=sharing";
 
 export const SEED_TASKS: SeedTask[] = [
   // ---------------- AIRWAY ----------------
@@ -129,7 +128,7 @@ export const SEED_TASKS: SeedTask[] = [
     priority: "P1",
     title: 'Publish "Signs Your Child\'s Breathing May Affect Jaw Growth"',
     subtitle: "Fully written blog post — copy in and publish as-is.",
-    driveLink: "https://drive.google.com/file/d/1BUaJNOsu-KEKF8Eed6uGO50LVLTbTNQu/view",
+    driveLink: "https://docs.google.com/document/d/1z4NW1vrJEYRreC5fkUr7nouNKrefHPl8fAUO02Yq9J4/edit?usp=sharing",
     link: null,
     linkLabel: null,
     how: `This entire blog post is already written, start to finish. It's a separate attached file alongside this dashboard (titled about Signs Your Child's Breathing). Copy it exactly as written into a new blog post on drbarortho.com and publish. There is nothing left to write for this task.`,
@@ -271,7 +270,7 @@ export const SEED_TASKS: SeedTask[] = [
     priority: "P1",
     title: "Add byline and updated date stamp",
     subtitle: "Add the reviewed-by line near the top of the MARPE section.",
-    driveLink: MARPE_BYLINE_DRIVE_FILE,
+    driveLink: MARPE_F_DRIVE_FILE,
     link: null,
     linkLabel: null,
     how: `Add this exact line near the top of the MARPE section:\n\n"Reviewed by Dr. Bar Nguyen, DDS, MS — Board-Certified Diplomate, American Board of Orthodontics. Updated September 2026."`,
@@ -341,7 +340,7 @@ export const SEED_TASKS: SeedTask[] = [
     priority: "P0",
     title: "Get listed on GetExpanded",
     subtitle: "Submit a provider profile with the ready-to-paste description.",
-    driveLink: "https://drive.google.com/file/d/1O4iyaR662Q2WrEcVnkt-OrX6iM0BtGQj/view",
+    driveLink: "https://docs.google.com/document/d/1Vqc-EPiekOIbxq2OeN0cJoeNpCWG0_RrHeVMMb6ts70/edit?usp=sharing",
     link: null,
     linkLabel: null,
     how: `Create a free account at getexpanded.org, click "Submit Provider," and enter:\n\nPractice: Dr. Bar Orthodontics\nProvider: Dr. Bar Nguyen, DDS, MS\nLocation: Katy, TX\nWebsite: drbarortho.com\nDevice: MARPE\n\nDescription (paste exactly): "Dr. Bar Orthodontics offers custom 3D-printed MARPE (miniscrew-assisted rapid palatal expansion) for adult and teen patients in Katy, TX, as part of an airway-focused approach to orthodontics. Dr. Bar has helped adult patients up to around age 52 with this non-surgical option for crossbites, crowding, and breathing-related concerns."`,
@@ -481,7 +480,7 @@ export const SEED_TASKS: SeedTask[] = [
     priority: "P1",
     title: "Publish the honest listicle",
     subtitle: "Fully written, competitors included — copy in and publish.",
-    driveLink: "https://drive.google.com/file/d/1avEcXXJLj46NhnYIax1J34CU5fcmVkDe/view",
+    driveLink: "https://docs.google.com/document/d/1KSVUQn69f92JokgApcljEAYtc9DnkHWoxKMZqtDEXvo/edit?usp=sharing",
     link: null,
     linkLabel: null,
     how: `This entire blog post ("Palate Expanders for Adults Near Katy & Houston") is already written, start to finish, competitors included and Dr. Bar clearly marked. It's a separate attached file. Copy it in and publish, nothing left to write.`,
@@ -495,7 +494,7 @@ export const SEED_TASKS: SeedTask[] = [
     priority: "P2",
     title: "Publish the three short Q&A posts",
     subtitle: "Fully written — copy each in and publish.",
-    driveLink: "https://drive.google.com/file/d/1UeDbtaeCyG92I_ypXubcS1sqouybX3xq/view",
+    driveLink: "https://docs.google.com/document/d/1ykh_l0mv7UC9is5acLapTnA3zJQ-ZH6DMUYoabA6ENo/edit?usp=sharing",
     link: null,
     linkLabel: null,
     how: `All three short Q&A posts are already written in full. They're in a separate attached file. Copy each in and publish, nothing left to write.`,
@@ -509,7 +508,7 @@ export const SEED_TASKS: SeedTask[] = [
     priority: "P1",
     title: "Turn your real adult outcomes into a fact sheet",
     subtitle: "One-page fact sheet with real verified numbers — publish or share as-is.",
-    driveLink: "https://drive.google.com/file/d/1NdHZqk1TPVOJPYpBICyZyzcv0T6eaecy/view",
+    driveLink: "https://docs.google.com/document/d/15bOqO5sTU-e75o0zX5s9ATx_WeP5ZHHWCukwsqK6JRA/edit?usp=sharing",
     link: null,
     linkLabel: null,
     how: `This one-page fact sheet is already written, with your real verified numbers (age range up to ~52, timeline, non-surgical). It's a separate attached file (MARPE-Fact-Sheet). Nothing left to write, just publish or share it as-is.`,

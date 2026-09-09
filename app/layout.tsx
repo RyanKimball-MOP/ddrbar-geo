@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "GEO Battle Station",
+  title: "Dr. Bar's Marketing Dashboard",
   description: "Dr. Bar Orthodontics — GEO/SEO task dashboards",
 };
 

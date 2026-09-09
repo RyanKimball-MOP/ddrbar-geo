@@ -6,7 +6,7 @@ export default function Home() {
     <div className="min-h-screen bg-stone">
       <header className="bg-evergreen">
         <div className="mx-auto max-w-4xl px-6 py-8">
-          <h1 className="font-serif text-3xl font-semibold text-stone-2">GEO Battle Station</h1>
+          <h1 className="font-serif text-3xl font-semibold text-stone-2">Dr. Bar's Marketing Dashboard</h1>
           <p className="mt-1 text-sm text-sage-soft">Dr. Bar Orthodontics — SEO/GEO task tracking</p>
         </div>
       </header>
