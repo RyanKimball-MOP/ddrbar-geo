@@ -59,7 +59,7 @@ export function TaskItem({ task }: { task: Task }) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 rounded-md bg-highlight px-3 py-1.5 text-sm font-medium text-ink transition hover:brightness-95"
               >
-                Review on Drive ↗
+                Review in Google Drive ↗
               </a>
               <button
                 type="button"
