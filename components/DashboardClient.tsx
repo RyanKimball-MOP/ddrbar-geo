@@ -9,6 +9,7 @@ import { SECTION_ORDER } from "@/lib/seed-data";
 import { ProgressBar } from "./ProgressBar";
 import { ClearAllButton } from "./ClearAllButton";
 import { TaskSection } from "./TaskSection";
+import { HistoryTable } from "./HistoryTable";
 
 export function DashboardClient({
   dashboardId,
@@ -77,6 +78,10 @@ export function DashboardClient({
                   />
                 );
               })}
+            </div>
+
+            <div className="mt-4">
+              <HistoryTable dashboardId={dashboardId} />
             </div>
           </>
         )}
