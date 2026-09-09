@@ -2,12 +2,16 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Tasks are seeded by the admin script only. The app's UI may read them
-    // and toggle exactly two fields (done, approval) — no create/delete from
-    // the client, and no other field can be changed.
+    // Tasks are seeded by the seed script (content fields) or toggled by the
+    // dashboard UI (done/approval). No create/delete from the client — the
+    // fixed set of task documents is managed entirely by editing seed data.
     match /tasks/{taskId} {
       allow read: if true;
-      allow update: if request.resource.data.diff(resource.data).affectedKeys().hasOnly(['done', 'approval']);
+      allow update: if request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+        'done', 'approval',
+        'sectionId', 'sectionTitle', 'itemId', 'order', 'title', 'subtitle',
+        'how', 'priority', 'link', 'linkLabel', 'driveLink'
+      ]);
       allow create, delete: if false;
     }
 

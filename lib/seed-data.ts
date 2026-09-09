@@ -15,8 +15,9 @@ export interface SeedTask {
   driveLink: string | null;
 }
 
-const AIRWAY_DRIVE_FILE = "https://drive.google.com/file/d/10YJJyyjZtySNtxWjtzYZ0uoCDkNFJ5U-/view";
-const MARPE_F_DRIVE_FILE = "https://drive.google.com/file/d/142Srub2snQfw-P6hEtVZ-8-MTRcK8W4X/view";
+const AIRWAY_DRIVE_FILE = "https://docs.google.com/document/d/1zwhQ29uWWhIJMX1_ThZfy1fBfvA4Ln9dp1kT-Th6FNk/edit?usp=sharing";
+const MARPE_F_DRIVE_FILE = "https://docs.google.com/document/d/16s4A1dvor8gZDdom0WqSHumEaQywhERBX8BgTbp3c2s/edit?usp=sharing";
+const MARPE_BYLINE_DRIVE_FILE = "https://drive.google.com/file/d/142Srub2snQfw-P6hEtVZ-8-MTRcK8W4X/view";
 const MARPE_E_DRIVE_FILE = "https://drive.google.com/file/d/1FGwfhoZ2rR3vDa2_-nOuYbr_M-fSWIKt/view";
 
 export const SEED_TASKS: SeedTask[] = [
@@ -270,7 +271,7 @@ export const SEED_TASKS: SeedTask[] = [
     priority: "P1",
     title: "Add byline and updated date stamp",
     subtitle: "Add the reviewed-by line near the top of the MARPE section.",
-    driveLink: MARPE_F_DRIVE_FILE,
+    driveLink: MARPE_BYLINE_DRIVE_FILE,
     link: null,
     linkLabel: null,
     how: `Add this exact line near the top of the MARPE section:\n\n"Reviewed by Dr. Bar Nguyen, DDS, MS — Board-Certified Diplomate, American Board of Orthodontics. Updated September 2026."`,
