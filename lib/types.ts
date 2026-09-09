@@ -31,6 +31,34 @@ export interface HistoryEntry {
   ment: number | null;
 }
 
+export interface TrackedQuery {
+  query: string;
+  clicks: number;
+  impressions: number;
+  position: number;
+}
+
+export interface Tracking {
+  dashboardId: DashboardId;
+  pageUrl: string;
+  fetchedAt: string;
+  indexing: {
+    coverageState: string;
+    verdict: string;
+    lastCrawlTime: string | null;
+  };
+  searchConsole: {
+    clicks28d: number;
+    impressions28d: number;
+    position28d: number;
+    topQueries: TrackedQuery[];
+  };
+  analytics: {
+    activeUsers28d: number;
+    pageViews28d: number;
+  };
+}
+
 export interface DashboardMeta {
   id: DashboardId;
   title: string;

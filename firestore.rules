@@ -17,5 +17,13 @@ service cloud.firestore {
       allow read: if true;
       allow write: if false;
     }
+
+    // Cached Search Console / Analytics data, refreshed by the sync script.
+    // Locked to the two known dashboard doc IDs so the client can't create
+    // arbitrary documents in this collection.
+    match /tracking/{dashboardId} {
+      allow read: if true;
+      allow write: if dashboardId in ['airway', 'marpe'];
+    }
   }
 }

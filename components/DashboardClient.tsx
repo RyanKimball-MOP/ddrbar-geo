@@ -10,6 +10,7 @@ import { ProgressBar } from "./ProgressBar";
 import { ClearAllButton } from "./ClearAllButton";
 import { TaskSection } from "./TaskSection";
 import { HistoryTable } from "./HistoryTable";
+import { TrackingPanel } from "./TrackingPanel";
 
 export function DashboardClient({
   dashboardId,
@@ -80,7 +81,8 @@ export function DashboardClient({
               })}
             </div>
 
-            <div className="mt-4">
+            <div className="mt-4 flex flex-col gap-4">
+              <TrackingPanel dashboardId={dashboardId} />
               <HistoryTable dashboardId={dashboardId} />
             </div>
           </>
