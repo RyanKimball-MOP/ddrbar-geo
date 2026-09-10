@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { collection, onSnapshot, orderBy, query, where } from "firebase/firestore";
+import { collection, onSnapshot, query, where } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import type { DashboardId, HistoryEntry } from "@/lib/types";
 
@@ -18,15 +18,13 @@ export function HistoryTable({ dashboardId }: { dashboardId: DashboardId }) {
   const [entries, setEntries] = useState<HistoryEntry[] | null>(null);
 
   useEffect(() => {
-    const q = query(
-      collection(db, "history"),
-      where("dashboardId", "==", dashboardId),
-      orderBy("date", "desc")
-    );
+    const q = query(collection(db, "history"), where("dashboardId", "==", dashboardId));
     const unsub = onSnapshot(
       q,
       (snap) => {
-        setEntries(snap.docs.map((d) => ({ id: d.id, ...d.data() }) as HistoryEntry));
+        const rows = snap.docs.map((d) => ({ id: d.id, ...d.data() }) as HistoryEntry);
+        rows.sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
+        setEntries(rows);
       },
       (err) => console.error(err)
     );
