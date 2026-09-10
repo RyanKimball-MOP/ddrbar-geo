@@ -11,7 +11,7 @@ const APPROVAL_LABEL: Record<string, string> = {
   rejected: "Changes requested",
 };
 
-export function TaskItem({ task }: { task: Task }) {
+export function TaskItem({ task, hideDriveButton }: { task: Task; hideDriveButton?: boolean }) {
   const ref = doc(db, "tasks", task.id);
 
   function toggleDone() {
@@ -53,14 +53,16 @@ export function TaskItem({ task }: { task: Task }) {
         <div className="mt-3 flex flex-wrap items-center gap-2">
           {task.driveLink && (
             <>
-              <a
-                href={task.driveLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 rounded-md bg-highlight px-3 py-1.5 text-sm font-medium text-ink transition hover:brightness-95"
-              >
-                Review in Google Drive ↗
-              </a>
+              {!hideDriveButton && (
+                <a
+                  href={task.driveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 rounded-md bg-highlight px-3 py-1.5 text-sm font-medium text-ink transition hover:brightness-95"
+                >
+                  Review in Google Drive ↗
+                </a>
+              )}
               <button
                 type="button"
                 onClick={() => setApproval("approved")}

@@ -15,9 +15,9 @@ export interface SeedTask {
   driveLink: string | null;
 }
 
-const AIRWAY_DRIVE_FILE = "https://docs.google.com/document/d/1zwhQ29uWWhIJMX1_ThZfy1fBfvA4Ln9dp1kT-Th6FNk/edit?usp=sharing";
-const MARPE_F_DRIVE_FILE = "https://docs.google.com/document/d/16s4A1dvor8gZDdom0WqSHumEaQywhERBX8BgTbp3c2s/edit?usp=sharing";
-const MARPE_E_DRIVE_FILE = "https://docs.google.com/document/d/1QFxPjliH--1QFbL3k9vui38n7nKbzfccsKFyVL8lgyc/edit?usp=sharing";
+const AIRWAY_DRIVE_FILE = "https://docs.google.com/document/d/1nJW38iPF61bZcyFXTEujSw9ykYUHPx7RSAnNuTFF3xA/edit?usp=sharing";
+const MARPE_F_DRIVE_FILE = "https://docs.google.com/document/d/1CRkVG50Q-968WvHHNkwjAWAxpaCGsY9Tf2wDLTYgYOg/edit?usp=sharing";
+const MARPE_E_DRIVE_FILE = "https://docs.google.com/document/d/1cjI3GVjaf3hzvXS53L22oD6nr0mWHvAhK4Gddda09WM/edit?usp=sharing";
 
 export const SEED_TASKS: SeedTask[] = [
   // ---------------- AIRWAY ----------------
