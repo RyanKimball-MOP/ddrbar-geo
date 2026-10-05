@@ -231,7 +231,7 @@ export const SEED_TASKS: SeedTask[] = [
     driveLink: MARPE_F_DRIVE_FILE,
     link: null,
     linkLabel: null,
-    how: `Replace the current opening sentence in the MARPE section with this exact paragraph:\n\n"A palate expander for adults — sometimes called MARPE (miniscrew-assisted rapid palatal expansion) — widens a narrow upper jaw without surgery, even after normal jaw growth has finished. Dr. Bar builds a custom 3D-printed MARPE appliance for each patient, anchored with mini-implants instead of relying on the teeth alone. Dr. Bar has helped adult patients up to around 52 years old with this approach, most often for crossbites, crowding, or breathing-related concerns where a traditional expander isn't an option."`,
+    how: `Replace the current opening sentence in the MARPE section with this exact paragraph:\n\n"A palate expander for adults — sometimes called MARPE (miniscrew-assisted rapid palatal expansion) — widens a narrow upper jaw without surgery, even after normal jaw growth has finished. Each patient receives a custom 3D-printed MARPE appliance, fabricated to their own anatomy and anchored with mini-implants instead of relying on the teeth alone. Dr. Bar has helped adult patients up to around 52 years old with this approach, most often for crossbites, crowding, or breathing-related concerns where a traditional expander isn't an option."`,
   },
   {
     dashboardId: "marpe",
@@ -245,7 +245,7 @@ export const SEED_TASKS: SeedTask[] = [
     driveLink: MARPE_F_DRIVE_FILE,
     link: null,
     linkLabel: null,
-    how: `Add these 3 exact Q&As to the existing FAQ block:\n\nQ: "Can I get a palate expander as an adult, or is it too late once I'm done growing?"\nA: "Yes. Traditional expanders work best in children because they rely on a growth plate that's still open. MARPE is built for adults and older teens whose jaw growth is complete, it uses mini-implants to apply the expansion force directly to the bone instead of the teeth, which is why it can still work after growth has finished."\n\nQ: "Is a palate expander for adults the same thing as MARPE?"\nA: "Yes, palate expander for adults is simply the plain-language way most people describe MARPE. Dr. Bar uses a custom 3D-printed MARPE appliance for adult cases."\n\nQ: "Do I need surgery for adult palate expansion?"\nA: "Not necessarily. MARPE is designed as a non-surgical option for many adults with a narrow or crowded jaw. Whether it's right for you depends on your CBCT scan and your individual case."\n\nAlso attached as a file for easy copy-paste: MARPE-Page-FAQs-and-Schema-Code.`,
+    how: `Add these 3 exact Q&As to the existing FAQ block:\n\nQ: "Can I get a palate expander as an adult, or is it too late once I'm done growing?"\nA: "Yes. Traditional expanders work best in children because the suture in the middle of the palate is still open. MARPE is built for adults and older teens whose jaw growth is complete, it uses mini-implants to apply the expansion force directly to the bone instead of the teeth, which is why it can still work after growth has finished."\n\nQ: "Is a palate expander for adults the same thing as MARPE?"\nA: "Yes, palate expander for adults is simply the plain-language way most people describe MARPE. Dr. Bar uses a custom 3D-printed MARPE appliance for adult cases."\n\nQ: "Do I need surgery for adult palate expansion?"\nA: "Not necessarily. MARPE is designed as a non-surgical option for many adults with a narrow or crowded jaw. Whether it's right for you depends on your CBCT scan and your individual case."\n\nAlso attached as a file for easy copy-paste: MARPE-Page-FAQs-and-Schema-Code.`,
   },
   {
     dashboardId: "marpe",
@@ -255,11 +255,11 @@ export const SEED_TASKS: SeedTask[] = [
     order: 5,
     priority: "P1",
     title: "Add the hidden label that AI reads (schema code)",
-    subtitle: "Ready-to-paste schema code for the page head or SEO plugin.",
+    subtitle: "Developer task: fix the old address in the site's existing code and add the MARPE schema.",
     driveLink: MARPE_F_DRIVE_FILE,
     link: null,
     linkLabel: null,
-    how: `This is ready-to-paste code, already written in full. It's in the attached file "MARPE-Page-FAQs-and-Schema-Code," in the section below the FAQs. Hatim pastes it into the page's page head or the SEO plugin's custom schema field, exactly as written, straight quotes only. This is not something anyone needs to compose.`,
+    how: `This one is for the web developer, and it is not a straight paste. The site already has a Dentist block and an FAQ block in its code, and the Dentist block still lists the old address (2910 Commercial Center Blvd). The attached document (section 3) says exactly what to change in those two existing blocks and gives one new block to add. Use straight quotes only. Nothing here needs to be written from scratch.`,
   },
   {
     dashboardId: "marpe",
@@ -273,7 +273,7 @@ export const SEED_TASKS: SeedTask[] = [
     driveLink: MARPE_F_DRIVE_FILE,
     link: null,
     linkLabel: null,
-    how: `Add this exact line near the top of the MARPE section:\n\n"Reviewed by Dr. Bar Nguyen, DDS, MS — Board-Certified Diplomate, American Board of Orthodontics. Updated September 2026."`,
+    how: `Add this exact line near the top of the MARPE section:\n\n"Reviewed by Dr. Bar Nguyen, DDS, MS — Board-Certified Diplomate, American Board of Orthodontics. Updated October 2026."`,
   },
   {
     dashboardId: "marpe",
