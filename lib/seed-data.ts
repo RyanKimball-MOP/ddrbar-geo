@@ -259,7 +259,7 @@ export const SEED_TASKS: SeedTask[] = [
     driveLink: MARPE_F_DRIVE_FILE,
     link: null,
     linkLabel: null,
-    how: `This one is for the web developer, and it is not a straight paste. The site already has a Dentist block and an FAQ block in its code, and the Dentist block still lists the old address (2910 Commercial Center Blvd). The attached document (section 3) says exactly what to change in those two existing blocks and gives one new block to add. Use straight quotes only. Nothing here needs to be written from scratch.`,
+    how: `This one is for the web developer, and it is not a straight paste. The site already has a Dentist block and an FAQ block in its code, and the Dentist block still lists the old address (2910 Commercial Center Blvd). The attached document (Part 2, for Hatim) says exactly what to change in those two existing blocks and gives one new block to add. Use straight quotes only. Nothing here needs to be written from scratch.`,
   },
   {
     dashboardId: "marpe",
