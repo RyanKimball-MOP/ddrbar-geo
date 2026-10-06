@@ -557,6 +557,9 @@ export const SEED_TASKS: SeedTask[] = [
   },
 ];
 
+// Tasks removed from SEED_TASKS stop showing on the dashboard even if their Firestore doc still exists.
+export const ACTIVE_TASK_IDS = new Set(SEED_TASKS.map((t) => `${t.dashboardId}-${t.itemId}`));
+
 export const SECTION_ORDER: Record<DashboardId, { id: string; title: string }[]> = {
   airway: [
     { id: "identity", title: "Make the identity and authority explicit" },

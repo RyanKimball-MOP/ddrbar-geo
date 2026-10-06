@@ -5,7 +5,7 @@ import Link from "next/link";
 import { collection, onSnapshot, query, where } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import type { DashboardId, Task } from "@/lib/types";
-import { SECTION_ORDER } from "@/lib/seed-data";
+import { ACTIVE_TASK_IDS, SECTION_ORDER } from "@/lib/seed-data";
 import { ProgressBar } from "./ProgressBar";
 import { ClearAllButton } from "./ClearAllButton";
 import { TaskSection } from "./TaskSection";
@@ -26,7 +26,9 @@ export function DashboardClient({
     const unsub = onSnapshot(
       q,
       (snap) => {
-        const rows = snap.docs.map((d) => ({ id: d.id, ...d.data() }) as Task);
+        const rows = snap.docs
+          .map((d) => ({ id: d.id, ...d.data() }) as Task)
+          .filter((t) => ACTIVE_TASK_IDS.has(t.id));
         rows.sort((a, b) => a.order - b.order);
         setTasks(rows);
       },
