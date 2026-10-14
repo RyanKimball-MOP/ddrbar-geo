@@ -12,7 +12,11 @@ service cloud.firestore {
         'sectionId', 'sectionTitle', 'itemId', 'order', 'title', 'subtitle',
         'how', 'priority', 'link', 'linkLabel', 'driveLink'
       ]);
-      allow create, delete: if false;
+      // New task documents can only be created for the LightForce dashboard.
+      allow create: if taskId.matches('lightforce-.*')
+        && request.resource.data.dashboardId == 'lightforce'
+        && request.resource.data.done == false;
+      allow delete: if false;
     }
 
     // History entries are logged manually (by Ryan or a script) outside this
@@ -23,11 +27,11 @@ service cloud.firestore {
     }
 
     // Cached Search Console / Analytics data, refreshed by the sync script.
-    // Locked to the two known dashboard doc IDs so the client can't create
+    // Locked to the known dashboard doc IDs so the client can't create
     // arbitrary documents in this collection.
     match /tracking/{dashboardId} {
       allow read: if true;
-      allow write: if dashboardId in ['airway', 'marpe'];
+      allow write: if dashboardId in ['airway', 'marpe', 'lightforce'];
     }
   }
 }

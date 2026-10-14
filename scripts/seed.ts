@@ -50,7 +50,10 @@ async function seed() {
   await batch.commit();
   const airwayCount = SEED_TASKS.filter((t) => t.dashboardId === "airway").length;
   const marpeCount = SEED_TASKS.filter((t) => t.dashboardId === "marpe").length;
-  console.log(`Seeded ${SEED_TASKS.length} tasks (${airwayCount} airway, ${marpeCount} marpe).`);
+  const lightforceCount = SEED_TASKS.filter((t) => t.dashboardId === "lightforce").length;
+  console.log(
+    `Seeded ${SEED_TASKS.length} tasks (${airwayCount} airway, ${marpeCount} marpe, ${lightforceCount} lightforce).`
+  );
   process.exit(0);
 }
 

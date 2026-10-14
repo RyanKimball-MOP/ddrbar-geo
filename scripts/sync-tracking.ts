@@ -8,12 +8,15 @@ import type { DashboardId, Tracking } from "../lib/types";
 
 const SITE_URL = "https://www.drbarortho.com/";
 const GA_PROPERTY = "properties/516920793";
-const PAGE_URL = "https://www.drbarortho.com/airway-focused-orthodontics/";
-const PAGE_PATH_FILTER = "airway-focused-orthodontics";
+const AIRWAY_PAGE_URL = "https://www.drbarortho.com/airway-focused-orthodontics/";
+const AIRWAY_PATH_FILTER = "airway-focused-orthodontics";
+const LIGHTFORCE_PAGE_URL = "https://www.drbarortho.com/lightforce-3d-custom-braces/";
+const LIGHTFORCE_PATH_FILTER = "lightforce-3d-custom-braces";
 
-const DASHBOARDS: { id: DashboardId; keyword: string }[] = [
-  { id: "airway", keyword: "airway" },
-  { id: "marpe", keyword: "marpe" },
+const DASHBOARDS: { id: DashboardId; keyword: string; pageUrl: string; pathFilter: string }[] = [
+  { id: "airway", keyword: "airway", pageUrl: AIRWAY_PAGE_URL, pathFilter: AIRWAY_PATH_FILTER },
+  { id: "marpe", keyword: "marpe", pageUrl: AIRWAY_PAGE_URL, pathFilter: AIRWAY_PATH_FILTER },
+  { id: "lightforce", keyword: "lightforce", pageUrl: LIGHTFORCE_PAGE_URL, pathFilter: LIGHTFORCE_PATH_FILTER },
 ];
 
 function composioExecute(slug: string, data: unknown): any {
@@ -34,14 +37,19 @@ function dateNDaysAgo(n: number): string {
   return d.toISOString().slice(0, 10);
 }
 
-async function fetchForDashboard(dashboardId: DashboardId, keyword: string): Promise<Tracking> {
+async function fetchForDashboard(
+  dashboardId: DashboardId,
+  keyword: string,
+  pageUrl: string,
+  pathFilter: string
+): Promise<Tracking> {
   const startDate = dateNDaysAgo(28);
   const endDate = dateNDaysAgo(0);
   const queryStartDate = dateNDaysAgo(90);
 
   const inspection = composioExecute("GOOGLE_SEARCH_CONSOLE_INSPECT_URL", {
     site_url: SITE_URL,
-    inspection_url: PAGE_URL,
+    inspection_url: pageUrl,
   });
   const indexStatus = inspection.inspectionResult.indexStatusResult;
 
@@ -51,7 +59,7 @@ async function fetchForDashboard(dashboardId: DashboardId, keyword: string): Pro
     end_date: endDate,
     dimensions: [],
     dimension_filter_groups: [
-      { filters: [{ dimension: "page", operator: "equals", expression: PAGE_URL }] },
+      { filters: [{ dimension: "page", operator: "equals", expression: pageUrl }] },
     ],
   });
   const totalsRow = pageTotals.rows?.[0] ?? { clicks: 0, impressions: 0, position: 0 };
@@ -65,7 +73,7 @@ async function fetchForDashboard(dashboardId: DashboardId, keyword: string): Pro
     dimension_filter_groups: [
       {
         filters: [
-          { dimension: "page", operator: "equals", expression: PAGE_URL },
+          { dimension: "page", operator: "equals", expression: pageUrl },
           { dimension: "query", operator: "contains", expression: keyword },
         ],
       },
@@ -84,7 +92,7 @@ async function fetchForDashboard(dashboardId: DashboardId, keyword: string): Pro
     dimensions: [{ name: "pagePath" }],
     metrics: [{ name: "screenPageViews" }, { name: "activeUsers" }],
     dimensionFilter: {
-      filter: { fieldName: "pagePath", stringFilter: { matchType: "CONTAINS", value: PAGE_PATH_FILTER } },
+      filter: { fieldName: "pagePath", stringFilter: { matchType: "CONTAINS", value: pathFilter } },
     },
   });
   const analyticsRow = analyticsResult.rows?.[0];
@@ -93,7 +101,7 @@ async function fetchForDashboard(dashboardId: DashboardId, keyword: string): Pro
 
   return {
     dashboardId,
-    pageUrl: PAGE_URL,
+    pageUrl: pageUrl,
     fetchedAt: new Date().toISOString(),
     indexing: {
       coverageState: indexStatus.coverageState,
@@ -126,9 +134,9 @@ async function main() {
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
 
-  for (const { id, keyword } of DASHBOARDS) {
+  for (const { id, keyword, pageUrl, pathFilter } of DASHBOARDS) {
     console.log(`Fetching tracking data for ${id}...`);
-    const tracking = await fetchForDashboard(id, keyword);
+    const tracking = await fetchForDashboard(id, keyword, pageUrl, pathFilter);
     await setDoc(doc(db, "tracking", id), tracking);
     console.log(`Wrote tracking/${id}:`, JSON.stringify(tracking, null, 2));
   }

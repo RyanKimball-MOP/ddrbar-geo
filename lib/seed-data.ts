@@ -1,4 +1,5 @@
 import type { DashboardId, Priority } from "./types";
+import { LIGHTFORCE_TASKS } from "./seed-lightforce";
 
 export interface SeedTask {
   dashboardId: DashboardId;
@@ -555,6 +556,7 @@ export const SEED_TASKS: SeedTask[] = [
     linkLabel: null,
     how: `No content involved. Once a month, click the check buttons in the panel on the right using the same buyer question.`,
   },
+  ...LIGHTFORCE_TASKS,
 ];
 
 // Tasks removed from SEED_TASKS stop showing on the dashboard even if their Firestore doc still exists.
@@ -574,6 +576,14 @@ export const SECTION_ORDER: Record<DashboardId, { id: string; title: string }[]>
     { id: "bio", title: "Make the bio identical everywhere" },
     { id: "publish", title: "Publish content AI can quote" },
     { id: "share", title: "Share it where AI looks" },
+    { id: "track", title: "Track progress" },
+  ],
+  lightforce: [
+    { id: "approve", title: "Step 1: Dr. Bar reviews and approves the new page wording" },
+    { id: "website", title: "Step 2: The website team builds it (after Dr. Bar approves)" },
+    { id: "google", title: "Step 3: Strengthen the Google listing and reviews" },
+    { id: "outreach", title: "Step 4: Ask LightForce for help" },
+    { id: "content", title: "Step 5: Photos, video and social" },
     { id: "track", title: "Track progress" },
   ],
 };

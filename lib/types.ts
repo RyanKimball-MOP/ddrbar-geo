@@ -1,4 +1,4 @@
-export type DashboardId = "airway" | "marpe";
+export type DashboardId = "airway" | "marpe" | "lightforce";
 
 export type Priority = "P0" | "P1" | "P2";
 
@@ -75,5 +75,10 @@ export const DASHBOARDS: DashboardMeta[] = [
     id: "marpe",
     title: "MARPE",
     description: "Adult palate expander (MARPE) page, listings, and bio consistency tasks.",
+  },
+  {
+    id: "lightforce",
+    title: "LightForce",
+    description: "LightForce braces page, cost and financing answers, Google listing, and video tasks.",
   },
 ];
