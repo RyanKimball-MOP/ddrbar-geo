@@ -23,7 +23,7 @@ export const LIGHTFORCE_TASKS: SeedTask[] = [
     driveLink: LIGHTFORCE_DRIVE_FILE,
     link: null,
     linkLabel: null,
-    how: `This replaces the first three paragraphs under the page title with:\n\n"LightForce braces are custom 3D-printed braces. Each bracket is made to fit the exact shape of your tooth, and Dr. Bar has been treating patients with them since 2021, about 400 to 500 patients so far.\n\nThink of it like racing: a great car helps, but the driver makes the difference. LightForce is the car. Dr. Bar's experience is the driver. Consult Dr. Bar in Katy to learn if LightForce is the right option for you."\n\nIt also removes the old line "may require fewer adjustment visits," because the number of fewer visits was not confirmed. Full before-and-after is in the Google Doc (Update 1).`,
+    how: `This replaces the first three paragraphs under the page title with:\n\n"LightForce braces are custom 3D-printed braces. Each bracket is made to fit the exact shape of your tooth.\n\nThink of it like racing: a great car helps, but the driver makes the difference. LightForce is the car. Dr. Bar's experience is the driver. Consult Dr. Bar in Katy to learn if LightForce is the right option for you."\n\nIt also removes the old line "may require fewer adjustment visits," because the number of fewer visits was not confirmed. Full before-and-after is in the Google Doc (Update 1).`,
   },
   {
     dashboardId: "lightforce",
@@ -32,11 +32,11 @@ export const LIGHTFORCE_TASKS: SeedTask[] = [
     order: 2,
     priority: "P0",
     title: `Approve the "Dr. Bar's LightForce Experience" box`,
-    subtitle: "A short new section: using LightForce since 2021, about 400 to 500 patients.",
+    subtitle: "A short new section in Dr. Bar's own words: one of the earliest to adopt LightForce, the first in Katy and Fulshear.",
     driveLink: LIGHTFORCE_DRIVE_FILE,
     link: null,
     linkLabel: null,
-    how: `A new short section placed right after the opening:\n\n"Dr. Bar's LightForce Experience\n• Using LightForce since 2021\n• About 400 to 500 LightForce patients treated\n• Every treatment plan is designed by Dr. Bar in LightForce's digital software, using a 3D scan and a CBCT scan of your teeth, jaw and tooth roots"\n\nApproving this means "since 2021" and "about 400 to 500 patients" are published exactly as written. Google Doc, Update 2.`,
+    how: `A new short section placed right after the opening:\n\n"Dr. Bar's LightForce Experience\n• Dr. Bar was one of the earliest orthodontists in the country to adopt LightForce, starting in 2021, and the first to offer it in Katy and Fulshear.\n• Since then, he has treated a high volume of LightForce cases, giving him experience with the system that few orthodontists can match.\n• Every treatment plan is designed by Dr. Bar in LightForce's digital software, using a 3D scan and a CBCT scan of your teeth, jaw and tooth roots"\n\nApproving this means "one of the earliest orthodontists in the country" and "the first to offer it in Katy and Fulshear" are published exactly as written. Please confirm you can support both statements. Google Doc, Update 2.`,
   },
   {
     dashboardId: "lightforce",
@@ -57,12 +57,12 @@ export const LIGHTFORCE_TASKS: SeedTask[] = [
     itemId: "l4",
     order: 4,
     priority: "P0",
-    title: "Approve the cost and financing section",
-    subtitle: "Publishes the $4,805 to $8,550 range and 0% in-house financing.",
+    title: `Approve the "Why don't we list prices online?" section`,
+    subtitle: "Explains why there are no prices, in Dr. Bar's wording. No price or financing details.",
     driveLink: LIGHTFORCE_DRIVE_FILE,
     link: null,
     linkLabel: null,
-    how: `A new section placed before the FAQ:\n\n"How Much Do LightForce Braces Cost in Katy?\nLightForce treatment at Dr. Bar Orthodontics typically costs between $4,805 and $8,550. The price depends on how complex your case is, and your exact price is confirmed at your consultation.\n\nWe offer in-house financing at 0% interest. You make a down payment, and the rest is spread over the length of your treatment."\n\nPeople search for LightForce cost before they call, and the page does not answer it today. Approving this publishes your price range. Google Doc, Update 4.`,
+    how: `A new section placed before the FAQ, in Dr. Bar's wording:\n\n"Why Don't We List Prices Online?\nA price without a diagnosis isn't meaningful. Two patients can need very different treatments. We'd rather examine you, explain exactly what you need, and give you a clear, complete fee than quote a number that may not apply to you.\n\nCall (281) 299-3912 to schedule your consultation."\n\nPeople search for LightForce cost before they call. This gives them a clear answer without a price or financing details. Google Doc, Update 4.`,
   },
   {
     dashboardId: "lightforce",
@@ -71,11 +71,11 @@ export const LIGHTFORCE_TASKS: SeedTask[] = [
     order: 5,
     priority: "P0",
     title: "Approve four new FAQ answers",
-    subtitle: "Cost, worth it, vs Invisalign, vs metal braces.",
+    subtitle: "Cost (no prices), worth it, vs Invisalign, vs metal braces.",
     driveLink: LIGHTFORCE_DRIVE_FILE,
     link: null,
     linkLabel: null,
-    how: `Four new questions are added after the three already in the FAQ:\n\n1. How much do LightForce braces cost in Katy, TX?\n2. Are LightForce braces worth it?\n3. Are LightForce braces better than Invisalign?\n4. Are LightForce braces better than metal braces?\n\nThe answers use your message: LightForce is a tool and the orthodontist makes the difference. Answer 3 says nearly all of your patients start with either LightForce braces or Angel Aligners. Please confirm you like that wording. Full answers are in the Google Doc, Update 5.`,
+    how: `Four new questions are added after the three already in the FAQ:\n\n1. How much do LightForce braces cost in Katy, TX? (The answer says Dr. Bar does not list prices online and gives a complete fee at the consultation.)\n2. Are LightForce braces worth it?\n3. Are LightForce braces better than Invisalign?\n4. Are LightForce braces better than metal braces?\n\nThe answers use your message: LightForce is a tool and the orthodontist makes the difference. Answer 3 says nearly all of your patients start with either LightForce braces or Angel Aligners. Please confirm you like that wording. Full answers are in the Google Doc, Update 5.`,
   },
   {
     dashboardId: "lightforce",
@@ -88,7 +88,7 @@ export const LIGHTFORCE_TASKS: SeedTask[] = [
     driveLink: LIGHTFORCE_DRIVE_FILE,
     link: null,
     linkLabel: null,
-    how: `The title stays the same. The short description Google shows under it is replaced with:\n\n"Dr. Bar has treated 400+ patients with LightForce braces since 2021. See costs and financing, then call (281) 299-3912 to book a consultation."\n\nGoogle Doc, Update 6.`,
+    how: `The title stays the same. The short description Google shows under it is replaced with:\n\n"Dr. Bar was one of the earliest orthodontists in the country to use LightForce braces, and the first in Katy and Fulshear. Call (281) 299-3912."\n\nGoogle Doc, Update 6.`,
   },
   {
     dashboardId: "lightforce",
@@ -170,7 +170,7 @@ export const LIGHTFORCE_TASKS: SeedTask[] = [
     driveLink: null,
     link: "https://business.google.com/",
     linkLabel: "Open Google Business Profile",
-    how: `Open the Dr. Bar Orthodontics Google Business Profile, go to Edit profile, then Services, and add a service named "LightForce 3D Custom Braces" with this description:\n\n"Custom 3D-printed braces. Dr. Bar has used LightForce since 2021 and has treated about 400 to 500 patients with it."\n\nSearches like "orthodontist katy" currently show the practice around position 26. Google answers those from the Business Profile, not the website.`,
+    how: `Open the Dr. Bar Orthodontics Google Business Profile, go to Edit profile, then Services, and add a service named "LightForce 3D Custom Braces" with this description:\n\n"Custom 3D-printed braces. Dr. Bar was one of the earliest orthodontists in the country to adopt LightForce, starting in 2021, and the first to offer it in Katy and Fulshear."\n\nSearches like "orthodontist katy" currently show the practice around position 26. Google answers those from the Business Profile, not the website.`,
   },
   {
     dashboardId: "lightforce",
@@ -196,7 +196,7 @@ export const LIGHTFORCE_TASKS: SeedTask[] = [
     driveLink: null,
     link: "https://business.google.com/",
     linkLabel: "Open Google Business Profile",
-    how: `Post the first update now and one every two weeks after that. First post:\n\n"Dr. Bar has used LightForce braces since 2021 and has treated about 400 to 500 patients with them. Learn how LightForce works and what it costs."\n\nAdd the button "Learn more" linking to ${LIGHTFORCE_PAGE}. Use a patient story or a before-and-after photo (with consent) for later posts.`,
+    how: `Post the first update now and one every two weeks after that. First post:\n\n"Dr. Bar was one of the earliest orthodontists in the country to adopt LightForce braces, and the first to offer them in Katy and Fulshear. Learn how LightForce works."\n\nAdd the button "Learn more" linking to ${LIGHTFORCE_PAGE}. Use a patient story or a before-and-after photo (with consent) for later posts.`,
   },
   {
     dashboardId: "lightforce",
@@ -224,7 +224,7 @@ export const LIGHTFORCE_TASKS: SeedTask[] = [
     driveLink: null,
     link: null,
     linkLabel: null,
-    how: `Dr. Bar sends this to the LightForce CEO, marketing director, sales rep and regional manager:\n\n"Hi [name], I'm updating my LightForce page and I'd love a 2 to 3 sentence quote from you about LightForce and working with me. I've treated about 400 to 500 patients with LightForce since 2021. Could you send me one I can publish with your name and title? Thank you."\n\nA quote from LightForce on the page shows visitors, Google and AI tools that the company itself stands behind Dr. Bar.`,
+    how: `Dr. Bar sends this to the LightForce CEO, marketing director, sales rep and regional manager:\n\n"Hi [name], I'm updating my LightForce page and I'd love a 2 to 3 sentence quote from you that I can publish with your name and title. Could you speak to these three points: (1) that I was one of the earliest orthodontists in the country to adopt LightForce, starting in 2021; (2) that my practice was the first to offer LightForce in Katy and Fulshear; (3) the depth of experience I have with the system. Please include only what LightForce can confirm. Thank you."\n\nWhy these points: LightForce is the one source that can confirm the "earliest" and "first" claims, which makes them far more believable to visitors, Google and AI tools. Do not ask for a quote about speed or results, because those claims depend on the doctor.`,
   },
   {
     dashboardId: "lightforce",
@@ -237,7 +237,7 @@ export const LIGHTFORCE_TASKS: SeedTask[] = [
     driveLink: null,
     link: "https://lf.co/",
     linkLabel: "Open lf.co",
-    how: `Dr. Bar sends this to his LightForce marketing director and sales rep:\n\n"Would you feature my practice on the LightForce blog, social channels or homepage, with a link to my LightForce page? ${LIGHTFORCE_PAGE} I'm happy to provide a case story and photos."\n\nlf.co already shows featured practices on its homepage. A link from the LightForce website to Dr. Bar's page tells Google the page matters for LightForce searches.`,
+    how: `Dr. Bar sends this to his LightForce marketing director and sales rep:\n\n"Would you feature my practice on the LightForce blog, social channels or homepage? Please link to this page: ${LIGHTFORCE_PAGE} with the link text: Dr. Bar Orthodontics: LightForce braces in Katy, TX. I'm happy to provide a case story and photos."\n\nAsk for this exact web address and this exact link text every time, for the quote, the feature and the listing. Always use the LightForce page, not the home page. lf.co already shows featured practices on its homepage. A link from the LightForce website to this page tells Google the page matters for LightForce searches.`,
   },
   {
     dashboardId: "lightforce",
@@ -250,7 +250,7 @@ export const LIGHTFORCE_TASKS: SeedTask[] = [
     driveLink: null,
     link: null,
     linkLabel: null,
-    how: `Dr. Bar asks his LightForce rep: "Is the find a LightForce doctor search coming back? Please list Dr. Bar Orthodontics, 6850 Katy-Gaston Rd, Suite A100, Katy, TX 77494, (281) 299-3912, as soon as it returns."`,
+    how: `Dr. Bar asks his LightForce rep: "Is the find a LightForce doctor search coming back? Please list the practice exactly like this when it returns: Dr. Bar Orthodontics, 6850 Katy-Gaston Rd, Suite A100, Katy, TX 77494, (281) 299-3912, website ${LIGHTFORCE_PAGE}"`,
   },
 
   // ---------------- STEP 5: PHOTOS, VIDEO AND SOCIAL ----------------
@@ -345,7 +345,7 @@ export const LIGHTFORCE_TASKS: SeedTask[] = [
     driveLink: null,
     link: null,
     linkLabel: null,
-    how: `This just records where things stood on Oct 12, 2026. No action needed.\n\n• Google: the LightForce page was the #1 result for "lightforce braces katy tx", and Dr. Bar's LightForce TikTok video (173,600 views) was also on page one.\n• ChatGPT: asked which Katy orthodontists offer LightForce, it named Dr. Bar Orthodontics first.\n• Broader searches such as "lightforce braces cost" ranked around positions 35 to 45.\n• Reviews: about 77 for Dr. Bar (per ChatGPT) vs 217 for KCC Orthodontics.`,
+    how: `This just records where things stood on Oct 12, 2026. No action needed.\n\n• Google: the LightForce page was the #1 result for "lightforce braces katy tx", and Dr. Bar's LightForce TikTok video (173,600 views) was also on page one.\n• ChatGPT: asked which Katy orthodontists offer LightForce, it named Dr. Bar Orthodontics first.\n• Broader searches such as "lightforce braces cost" ranked around positions 35 to 45.\n• Reviews: about 77 for Dr. Bar (per ChatGPT) vs 217 for KCC Orthodontics.\n• Decision: no prices, financing details or patient counts are published.`,
   },
   {
     dashboardId: "lightforce",
