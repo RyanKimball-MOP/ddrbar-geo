@@ -10,7 +10,7 @@ const OUTREACH = { sectionId: "outreach", sectionTitle: "Step 4: Ask LightForce 
 const CONTENT = { sectionId: "content", sectionTitle: "Step 5: Photos, video and social" } as const;
 const TRACK = { sectionId: "track", sectionTitle: "Track progress" } as const;
 
-export const LIGHTFORCE_TASKS: SeedTask[] = [
+const ALL_LIGHTFORCE_TASKS: SeedTask[] = [
   // ---------------- STEP 1: DR. BAR APPROVES ----------------
   {
     dashboardId: "lightforce",
@@ -323,3 +323,11 @@ export const LIGHTFORCE_TASKS: SeedTask[] = [
     how: `Ryan checks three things once a month and compares them with the starting point:\n\n1. The Live Tracking Panel below, which shows Google searches that include "lightforce" for this page.\n2. Ask ChatGPT: "Which orthodontists in Katy, Texas offer LightForce 3D custom braces? Who would you recommend and why?" Note whether Dr. Bar is named first.\n3. The Google review count for Dr. Bar Orthodontics.`,
   },
 ];
+
+// Sections held back from the dashboard for now so Dr. Bar is not handed everything at once.
+// To add one later, remove its id from this set. The task text above stays as written.
+const HELD_BACK_SECTIONS = new Set(["outreach", "content"]);
+
+export const LIGHTFORCE_TASKS: SeedTask[] = ALL_LIGHTFORCE_TASKS.filter(
+  (t) => !HELD_BACK_SECTIONS.has(t.sectionId)
+);
