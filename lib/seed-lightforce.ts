@@ -115,7 +115,7 @@ export const LIGHTFORCE_TASKS: SeedTask[] = [
     driveLink: LIGHTFORCE_DRIVE_FILE,
     link: null,
     linkLabel: null,
-    how: `LightForce wrote a quote for the website. It goes directly after the "Dr. Bar's LightForce Experience" box, credited "Per LightForce management" (LightForce did not allow a name):\n\n"A pioneer in orthodontic innovation, Dr. Bar was among the first orthodontists in the United States to embrace LightForce, adopting the technology in 2021. As the first orthodontist in Katy and Fulshear to offer LightForce, he introduced fully customized, 3D-printed braces to the community. Since then he has treated a high volume of LightForce cases and has become one of the most experienced LightForce providers in Southeast Texas."\n\nTwo changes were made to LightForce's original: "hundreds of patients" became "a high volume of cases," and "more than five years of experience" became "since 2021." Ryan is confirming both changes with LightForce before publishing. Google Doc, Update 8.`,
+    how: `LightForce wrote a quote for the website. It goes directly after the "Dr. Bar's LightForce Experience" box, credited "Per LightForce management" (LightForce did not allow a name):\n\n"A pioneer in orthodontic innovation, Dr. Bar was among the first orthodontists in the United States to embrace LightForce, incorporating the technology into his practice in 2021. As the first orthodontist in Katy and Fulshear to offer LightForce, he introduced fully customized, 3D-printed braces to the community. With more than five years of experience and hundreds of patients treated with LightForce, Dr. Bar has established himself as one of the most experienced LightForce providers in Southeast Texas."\n\nLightForce gave permission to use this quote only exactly as written, so it cannot be edited. It says "hundreds of patients" and "more than five years of experience." Dr. Bar asked us not to publish patient counts, so approve it only if you are comfortable with the quote as written. If not, click Changes Needed and Ryan will ask LightForce for a different version. Google Doc, Update 8.`,
   },
 
   // ---------------- STEP 2: WEBSITE TEAM ----------------
@@ -233,12 +233,12 @@ export const LIGHTFORCE_TASKS: SeedTask[] = [
     itemId: "l16",
     order: 17,
     priority: "P1",
-    title: "Get LightForce's OK on two edits to their quote",
-    subtitle: "LightForce wrote the quote. Ryan confirms the edits and asks about \"second in Texas.\"",
+    title: "LightForce quote received: use it word for word",
+    subtitle: "LightForce gave permission for the quote only, credited \"Per LightForce management.\"",
     driveLink: null,
     link: null,
     linkLabel: null,
-    how: `LightForce sent a quote for the website (see Update 8). Ryan sends this reply to LightForce:\n\n"Thank you, this is great. Two small edits: please change 'hundreds of patients' to 'a high volume of cases' and 'more than five years' to 'since 2021,' because those numbers change. We will credit it 'Per LightForce management.' If you can also confirm in writing that Dr. Bar was the second orthodontist in Texas to start with LightForce, we will add that too."\n\nDo not publish the quote until LightForce replies. Do not add "second in Texas" to the page until LightForce confirms it in writing.`,
+    how: `LightForce wrote a quote for Dr. Bar's website (see Update 8). We only have permission to use it exactly as written, with no edits, credited "Per LightForce management" because LightForce did not allow a name.\n\nDo not change any word of the quote. If Dr. Bar wants a different version, Ryan asks LightForce to write a new one.`,
   },
   {
     dashboardId: "lightforce",
