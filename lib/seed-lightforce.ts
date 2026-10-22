@@ -91,7 +91,7 @@ const ALL_LIGHTFORCE_TASKS: SeedTask[] = [
     driveLink: LIGHTFORCE_DRIVE_FILE,
     link: null,
     linkLabel: null,
-    how: `For the website team, after Dr. Bar approves Part 1. Create a copy of the page at https://www.drbarortho.com/lightforce-3d-custom-braces-v2/ and set it to noindex, the same way as the Airway v2 page. Put Updates 1 to 5 on it. Do not change the live page until Ryan approves the copy. Exact placement for each update is in Part 2, Step 2 of the attached document.`,
+    how: `For the website team. Put Updates 1 to 5 on the v2 page at https://www.drbarortho.com/lightforce-3d-custom-braces-v2/. Exact placement for each update is in Part 2, Step 2 of the attached document.`,
   },
   {
     dashboardId: "lightforce",
