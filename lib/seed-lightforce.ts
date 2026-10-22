@@ -49,7 +49,7 @@ const ALL_LIGHTFORCE_TASKS: SeedTask[] = [
     driveLink: LIGHTFORCE_DRIVE_FILE,
     link: null,
     linkLabel: null,
-    how: `The title stays the same. The short description Google shows under it is replaced with:\n\n"Dr. Bar was one of the earliest orthodontists to use LightForce braces and the first in Katy and Fulshear. Call (281) 299-3912 for a free consultation."\n\nGoogle Doc, Update 3.`,
+    how: `The title stays the same. The short description Google shows under it is replaced with:\n\n"Call (281) 299-3912 for a free LightForce consultation. Dr. Bar was one of the earliest orthodontists to use LightForce and the first in Katy and Fulshear."\n\nGoogle Doc, Update 3.`,
   },
   {
     dashboardId: "lightforce",
